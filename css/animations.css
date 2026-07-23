@@ -1,0 +1,233 @@
+/* ===========================
+   FADE IN
+=========================== */
+
+@keyframes fadeIn{
+
+0%{
+    opacity:0;
+    transform:translateY(30px);
+}
+
+100%{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+.fade-in{
+    animation:fadeIn 1s ease;
+}
+
+/* ===========================
+   ZOOM IN
+=========================== */
+
+@keyframes zoomIn{
+
+0%{
+    transform:scale(.8);
+    opacity:0;
+}
+
+100%{
+    transform:scale(1);
+    opacity:1;
+}
+
+}
+
+.zoom-in{
+    animation:zoomIn .8s ease;
+}
+
+/* ===========================
+   SLIDE LEFT
+=========================== */
+
+@keyframes slideLeft{
+
+0%{
+    opacity:0;
+    transform:translateX(-60px);
+}
+
+100%{
+    opacity:1;
+    transform:translateX(0);
+}
+
+}
+
+.slide-left{
+    animation:slideLeft 1s ease;
+}
+
+/* ===========================
+   SLIDE RIGHT
+=========================== */
+
+@keyframes slideRight{
+
+0%{
+    opacity:0;
+    transform:translateX(60px);
+}
+
+100%{
+    opacity:1;
+    transform:translateX(0);
+}
+
+}
+
+.slide-right{
+    animation:slideRight 1s ease;
+}
+
+/* ===========================
+   BOUNCE
+=========================== */
+
+@keyframes bounce{
+
+0%,20%,50%,80%,100%{
+    transform:translateY(0);
+}
+
+40%{
+    transform:translateY(-15px);
+}
+
+60%{
+    transform:translateY(-8px);
+}
+
+}
+
+.bounce{
+    animation:bounce 2s infinite;
+}
+
+/* ===========================
+   BUTTON HOVER
+=========================== */
+
+.btn{
+    transition:.3s ease;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+/* ===========================
+   CARD HOVER
+=========================== */
+
+.card,
+.menu-card,
+.team-card,
+.review,
+.gallery-item,
+.why-card,
+.mission-box,
+.benefit{
+
+    transition:.4s ease;
+
+}
+
+.card:hover,
+.menu-card:hover,
+.team-card:hover,
+.review:hover,
+.gallery-item:hover,
+.why-card:hover,
+.mission-box:hover,
+.benefit:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 12px 25px rgba(0,0,0,.2);
+
+}
+
+/* ===========================
+   IMAGE ZOOM
+=========================== */
+
+.gallery-item{
+    overflow:hidden;
+}
+
+.gallery-item img{
+    transition:.5s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.1);
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+nav ul li a{
+    position:relative;
+    transition:.3s;
+}
+
+nav ul li a::after{
+
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0;
+    height:2px;
+    background:#ff9800;
+    transition:.3s;
+
+}
+
+nav ul li a:hover::after{
+
+    width:100%;
+
+}
+
+/* ===========================
+   SOCIAL ICONS
+=========================== */
+
+.social-icons a{
+
+    transition:.3s;
+
+}
+
+.social-icons a:hover{
+
+    transform:rotate(360deg);
+
+}
+
+/* ===========================
+   SCROLL ANIMATION
+=========================== */
+
+.hero-content,
+.about,
+.menu-section,
+.gallery,
+.contact,
+.reservation,
+.team,
+.stats,
+.offer{
+
+    animation:fadeIn 1s ease;
+
+}

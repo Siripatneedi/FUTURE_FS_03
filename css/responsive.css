@@ -1,0 +1,126 @@
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width:992px){
+
+header{
+    flex-direction:column;
+    padding:15px 5%;
+}
+
+nav ul{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.hero{
+    height:75vh;
+}
+
+.hero-content h1{
+    font-size:45px;
+}
+
+.about-page,
+.contact-container{
+    flex-direction:column;
+}
+
+.cards,
+.menu-container,
+.gallery-container,
+.team-container,
+.feature-box,
+.review-container,
+.benefit-container,
+.stats{
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+header{
+    text-align:center;
+}
+
+nav ul{
+    flex-direction:column;
+    gap:15px;
+}
+
+.hero{
+    height:65vh;
+}
+
+.hero-content h1{
+    font-size:35px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+
+section{
+    padding:60px 20px;
+}
+
+.page-banner h1{
+    font-size:35px;
+}
+
+.card img,
+.menu-card img,
+.gallery-item img{
+    height:220px;
+}
+
+.team-card img{
+    height:240px;
+}
+
+.btn{
+    padding:12px 25px;
+}
+
+}
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+@media (max-width:480px){
+
+.logo h2{
+    font-size:22px;
+}
+
+.hero-content h1{
+    font-size:28px;
+}
+
+.hero-content p{
+    font-size:16px;
+}
+
+.page-banner h1{
+    font-size:28px;
+}
+
+section h2{
+    font-size:28px;
+}
+
+.contact-info,
+.contact-form,
+.reservation-container{
+    padding:20px;
+}
+
+}
